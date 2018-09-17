@@ -203,6 +203,10 @@ class FlickrApi
         $this->setParams($data2);
 
         $url=self::OAUTH_URL."?".http_build_query(self::getParams());
+
+        $this->removeParams($data);
+        $this->removeParams($data2);
+
         header('Location:'.$url);
     }
 
