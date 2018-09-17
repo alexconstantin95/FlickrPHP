@@ -1,0 +1,32 @@
+<h2>Select photo to upload </h2>
+
+<form method="post" enctype="multipart/form-data" action="ExampleUpload.php">
+    <h4>Title</h4>
+    <input type="text" name="title" placeholder="Title..."><br><br>
+
+    <h4>Description</h4>
+    <input type="text" name="description" placeholder="Description..."><br><br>
+
+    <h4>Tags (separated by comma)</h4>
+    <input type="text" name="tags" placeholder="Tags..."><br><br>
+
+    <h4>Photo (jpg, jpeg, gif, png)</h4>
+    <input type="file" name="photo"><br><br>
+
+    <h4>Is Public?</h4>
+    <input type="radio" name="is_public" value="1" checked>Yes
+    <input type="radio" name="is_public" value="0">No
+
+    <h4>Is Friend?</h4>
+    <input type="radio" name="is_friend" value="1" checked>Yes
+    <input type="radio" name="is_friend" value="0">No
+
+    <h4>Is Family?</h4>
+    <input type="radio" name="is_family" value="1" checked>Yes
+    <input type="radio" name="is_family" value="0">No
+    <br><br>
+
+
+
+    <input type="submit" value="Upload photo">
+</form>
